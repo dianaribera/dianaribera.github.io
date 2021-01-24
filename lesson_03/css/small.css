@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto+Slab:wght@300;400;500;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1f417d;
+    --secondary-color: #3eaea3;
+    --accent1-color: #f6d65b;
+    --accent2-color: #ec563c;
+}
+
+body {
+    max-width: 900px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    padding: 15px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Merriweather' , Georgia, serif;
+    margin: 0.15rem;
+    padding: 10px 30px 5px;
+}
+
+header h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 900;
+    font-family:  'Lato', sans-serif;
+    padding: 8px;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    display: block;
+    max-width: 860px;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #ec563c;
+    margin-top: 10px;
+}
+
+h4{
+    padding: 10px 25px 0px 25px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+}
+
+header a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav {
+	background-color: #1f417d;
+	text-align: center;
+}
+nav ul {
+    font-family: 'Lato', sans-serif;;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+}
+nav a:hover {
+	background-color: #bbb;
+	color: #36454f;
+}
+
+.active {
+	color: rgb(209, 131, 42);
+}
+
+main {
+    padding: 20px;
+}
+
+.domain {
+    font-weight: 600;
+}
+
+ul {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    margin-left: 40px;
+    padding-bottom: 30px;
+}
+
+ol {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    margin: 20px 0px 10px 40px;
+}
+
+img.persona {
+    margin: 10px 0px 5px 25px;
+    border: solid 2px #1f417d
+}
+
+logo img {
+    max-width: 400px;
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.colors th {
+    background-color: #999;
+    padding: 10px;
+}
+.colors td {
+    width: 25%;
+    height: 10em;
+}
+  
+.primary {
+    background-color: var(--primary-color);
+}
+.secondary {
+    background-color: var(--secondary-color);
+}
+.accent1 {
+    background-color: var(--accent1-color);
+    color: #000;
+}
+.accent2{
+    background-color: var(--accent2-color);
+}
+
+.weather-h1 {
+    color: var(--primary-color);
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.weather-h2 {
+    color: var(--secondary-color);
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.weather-h3 {
+    color: var(--accent2-color);
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.weather-p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.weather-nav {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.weather-nav:hover {
+    background-color: var(--secondary-color);
+}
+
+.weather-footer {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+header, footer {
+    background-color: #0d9b88;
+}
+
+p {
+    padding: 5px 25px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+
+footer {
+    height: 50px;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 15px;
+}
+
+footer p {
+    color: #fff;
+    font-family:  'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+footer a {
+    color: #fff;
+}
