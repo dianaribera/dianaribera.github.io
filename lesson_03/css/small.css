@@ -88,7 +88,7 @@ nav a:hover {
 }
 
 .current {
-    color: var(--accent2-color);
+    color: #C81803;
     background-color: #e0e2e2;
     font-weight: 600;
 }
