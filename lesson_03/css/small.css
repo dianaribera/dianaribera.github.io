@@ -65,7 +65,7 @@ header a {
 
 nav {
 	background-color: #1f417d;
-	text-align: center;
+    text-align: center;
 }
 nav ul {
     font-family: 'Lato', sans-serif;;
@@ -80,7 +80,7 @@ nav ul li a {
 	text-align: center;
 	padding: 0.75rem;
 	text-decoration: none;
-	font-size: 0.95rem;
+	font-size: 1.1rem;
 }
 nav a:hover {
 	background-color: #bbb;
@@ -88,8 +88,9 @@ nav a:hover {
 }
 
 .current {
-    color: rgb(209, 131, 42);
+    color: var(--accent2-color);
     background-color: #e0e2e2;
+    font-weight: 600;
 }
 
 main {
