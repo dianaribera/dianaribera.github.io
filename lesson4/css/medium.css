@@ -1,4 +1,9 @@
 @media only screen and (min-width: 38.5em) {
+    #primaryNav {
+        max-width: 1000px;
+        margin: auto;
+    }
+
     nav ul { display: flex; }
     nav ul li { flex: 1 1 100%; }
 
@@ -17,13 +22,13 @@
     }
 
     main {
-        max-width: 800px;
+        max-width: 1000px;
         margin: auto;
     
     }
 
     footer {
-        max-width: 800px;
+        max-width: 1000px;
         margin: auto;
     }
     
