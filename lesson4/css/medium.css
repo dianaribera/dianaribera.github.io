@@ -1,0 +1,30 @@
+@media only screen and (min-width: 38.5em) {
+    nav ul { display: flex; }
+    nav ul li { flex: 1 1 100%; }
+
+    nav img.hamburger {
+        display: none;
+    }
+    
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: .8rem 1rem;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    main {
+        max-width: 800px;
+        margin: auto;
+    
+    }
+
+    footer {
+        max-width: 800px;
+        margin: auto;
+    }
+    
+}
