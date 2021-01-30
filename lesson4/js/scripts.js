@@ -8,5 +8,5 @@ var day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Sa
 var month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 document.getElementById("currentDate").innerHTML = day[current.getDay()] +
-    ", " + current.getDate() + " " + month[current.getMonth()] + " " +
+    ", " + current.getDate() + " " + month[current.getMonth()] + ", " +
     current.getFullYear();
