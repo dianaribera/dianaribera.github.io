@@ -9,7 +9,7 @@
     --primary-color: #1f417d;
     --secondary-color: #3C827A;
     --accent1-color: #f6d65b;
-    --accent2-color: #ec563c;
+    --accent2-color: #e64529;
 }
 
 body {
@@ -155,8 +155,9 @@ img.hero {
     font-family: 'Open Sans', sans-serif;
 }
 
-.continue {
+p .continue {
     color: var(--accent2-color);
+    font-weight: 700;
     text-decoration: underline;
 }
 
