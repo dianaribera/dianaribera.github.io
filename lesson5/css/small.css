@@ -108,6 +108,7 @@ h3 {
 
 img.hero {
     max-width: 165%;
+    min-height: 240px;
 }
 
 .weathersummary {
