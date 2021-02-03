@@ -156,7 +156,7 @@ img.hero {
 }
 
 p .continue {
-    color: var(--accent2-color);
+    color: #D3190C;
     font-weight: 700;
     text-decoration: underline;
 }
