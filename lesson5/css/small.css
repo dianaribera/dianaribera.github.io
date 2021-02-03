@@ -122,6 +122,10 @@ img.hero {
 	opacity: .9;
 }
 
+.weathersummary h3 {
+    font-size: 1.2rem;
+}
+
 .line {
     border: 1px solid  #000;
 }
