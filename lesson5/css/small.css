@@ -116,7 +116,7 @@ img.hero {
     font-size: .9rem;
 	top: 25px;
     left: 25px;
-	background: radial-gradient(var(--accent1-color), #f1bb28);
+	background: radial-gradient(#f6d65b, #f1bb28);
 	border: 2px solid #e1af04;
 	padding: 1.5rem;
 	box-shadow: 0 0 30px #111;

@@ -48,6 +48,15 @@
         max-width: 65%;
     }
 
+    .weathertable tr:nth-child(3) {
+        color: #000;
+    }
+
+    .weathertable tr:nth-child(3) td {
+        padding-top: 0px;
+        padding-bottom: 25px;
+    }
+
     .article::after {
         content: "";
         clear: both;
