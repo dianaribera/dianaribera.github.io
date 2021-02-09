@@ -1,0 +1,96 @@
+@media only screen and (min-width: 38.5em) {
+    #primaryNav {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    main {
+        max-width: 1000px;
+        margin: auto;
+    
+    }
+
+    .herodiv {
+        width: 96%;
+        margin: auto;
+    }
+
+    .herodiv .hero img {
+        width: 100%;
+    }
+
+    .weathersummary {
+        font-size: 1rem;
+    }
+
+    .forecast {
+        display: block;
+        margin-top: 35px;
+        text-align: center;
+        color: var(--secondary-color);
+    }
+
+    .forecast h3 {
+        margin-bottom: -10px;
+    }
+
+    .weathertable {
+        width: 90%;
+        min-width: 350px;
+        text-align: center;
+        margin: 20px auto 0 auto;
+        color: #fff;
+        font-family: 'Lato', sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    .weathertable th {
+        background-color: var(--primary-color);
+        padding: 10px;
+    }
+    .weathertable td {
+        width: 20%;
+        padding: 10px;
+    }
+
+    .weathertable img {
+        max-width: 65%;
+    }
+
+    .weathertable tr:nth-child(3) {
+        color: #000;
+    }
+
+    .weathertable tr:nth-child(3) td {
+        padding-top: 0px;
+        padding-bottom: 25px;
+    }
+
+    .article::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+
+    .article img {
+        float: right;
+        max-width: 400px;
+        margin: 10px;
+    }
+
+    footer {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    #mainfooter {
+        text-align: center;
+        column-count: 2;
+    }
+
+    .map {
+        display: inline-block;
+        max-width: 300px;
+    }
+    
+}
