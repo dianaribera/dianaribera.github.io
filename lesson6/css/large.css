@@ -26,5 +26,9 @@
         border-right: none;
     }
 
+    .herodiv .hero img {
+        width: 100%;
+    }
+
 
 }

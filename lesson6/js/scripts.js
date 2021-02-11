@@ -12,15 +12,6 @@ document.getElementById("currentDate").innerHTML = day[current.getDay()] +
     current.getFullYear();
 
     
-function pancakes() {
-    var now = new Date();
-    var dayOfWeek = now.getDate();
-    var show = document.getElementById('breakfast');
-
-    if (dayOfWeek == 5) {
-        show.style.display = (show.style.display == 'block') ? 'none' : 'block';
-        }
-        else {
-            show.style.display = (show.style.display == 'none') ? 'block' : 'none';
-        }
+if (current.getDay() == 5) {
+    document.getElementById("breakfast").style.display = "block";
 }

@@ -103,10 +103,11 @@ h3 {
 .herodiv {
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .hero img {
-    width: 100%;
+    width: 170%;
     overflow: hidden;
 }
 

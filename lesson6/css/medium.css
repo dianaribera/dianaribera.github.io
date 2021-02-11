@@ -13,10 +13,11 @@
     .herodiv {
         width: 96%;
         margin: auto;
+        overflow: hidden;
     }
 
     .herodiv .hero img {
-        width: 100%;
+        width: 120%;
         overflow: hidden;
     }
 
