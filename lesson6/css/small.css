@@ -113,26 +113,27 @@ h3 {
 
 .weathersummary {
     position: absolute;
-    font-size: .9rem;
-	top: 25px;
-    left: 25px;
+	top: 15px;
+    left: 15px;
 	background: radial-gradient(#f6d65b, #f1bb28);
 	border: 2px solid #e1af04;
-	padding: 1.5rem;
-	box-shadow: 0 0 30px #111;
+	padding: .7rem;
+	box-shadow: 0 0 20px #111;
 	opacity: .9;
 }
 
 .weathersummary h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    margin-top: -.4rem;
 }
 
 .line {
-    border: 1px solid  #000;
+    border: .5px solid  #000;
 }
 
 .weathersummary p {
-    margin-top: 10px;
+    margin-top: 5px;
+    font-size: 0.8rem;
 }
 
 .forecast {
