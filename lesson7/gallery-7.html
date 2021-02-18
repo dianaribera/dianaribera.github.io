@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Birds of a Weather, Weather Gallery">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="sytlesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Birds of a Weather | Weather Gallery</title>
+  </head>
+  <body>
+    <div id="breakfast"><p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p></div>
+    <header>
+      <img class="logo" src="images/birds-of-a-weather-logo2.svg" alt="Birds of a Weather Logo">
+      <div class="m">We stick together</div>
+    </header>
+  <nav>
+    <img class="hamburger" onclick="toggleMenu()" src="images/hamburger-icon.svg" alt="Hamburger icon" role="button">
+    <ul id="primaryNav" class="hide">
+      <li><a href="#">Home</a></li>
+      <li><a href="preston-5.html">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="#">Storm Center</a></li>
+      <li class="current"><a class="noborder" href="#">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Weather Gallery</h2>
+    <div class="gallery">
+        <figure>
+            <img src='images/placeholder.jpg' data-src='images/lazy2.jpg' alt='Yellow Flower'>
+            <p>Local wild flower in the early spring</p>
+        </figure>
+        <figure>
+            <img src='images/placeholder.jpg' data-src='images/lazy5.jpg' alt='Golden Grasses'>
+            <p>Golden grasses in winter by Preston Pond</p>
+        </figure>
+        <figure>
+            <img src='images/placeholder.jpg' data-src='images/lazy3.jpg' alt='Gate in the fall'>
+            <p>Fall colors up Preston Canyon</p>
+        </figure>
+        <figure>
+            <img src='images/placeholder.jpg' data-src='images/gallery1.jpg' alt='Sun Circles'>
+            <p>Rings around the sun</p>
+        </figure>
+        <figure>
+            <img src='images/placeholder.jpg' data-src='images/gallery2.jpg' alt='Sunset'>
+            <p>Sunset in late summer</p>
+        </figure>
+        <figure>
+            <img src='images/placeholder.jpg' data-src='images/gallery3.jpg' alt='Rainbow over fields'>
+            <p>Full rainbow over green fields</p>
+        </figure>
+        <figure>
+            <img src='images/placeholder.jpg' data-src='images/gallery4.jpg' alt='Thunder storm'>
+            <p>Thunder strike during last weeks storm</p>
+        </figure>
+        <figure>
+            <img src='images/placeholder.jpg' data-src='images/gallery5.jpg' alt='Snow on trees'>
+            <p>Snow fall in the forest</p>
+        </figure>
+        <figure>
+            <img src='images/placeholder.jpg' data-src='images/gallery6.jpg' alt='Forest in the fall'>
+            <p>Forest colors in autumn</p>
+        </figure>
+    </div>
+    
+  </main>
+  <footer>
+    <div id="mainfooter">
+      <img class="map" src="images/map.jpg" alt="map">
+      <h4 class="left">Birds of a Weather</h4>  
+      <p class="left"><img class="icon" src="images/pin.svg" alt="location pin icon">350 East 1243 North<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Preston, ID 83263</p>
+      <br>
+      <p class="left"><img class="icon" src="images/phone.svg" alt="phone icon">123.456.7890<br>
+        <img class="icon" src="images/mail.svg" alt="mail icon">info@birdsofaweather.com</p>
+        <div class="social left"><a href="#"><img src="images/facebook.svg" alt="facebook icon"></a><a href="#"><img src="images/instagram.svg" alt="instagram icon"></a><a href="#"><img src="images/twitter.svg" alt="twitter icon"></a></div>
+    </div>
+    <div id="bottom-footer">
+        <p id="currentDate"></p>
+    </div>
+  </footer>
+  <script src="js/scripts.js"></script>
+  </body>
+</html>
