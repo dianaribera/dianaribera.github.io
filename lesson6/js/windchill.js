@@ -10,7 +10,7 @@ function windChill(t, s) {
 }
 
 if ((temp > 50) || (speed < 3)) {
-    document.getElementById("windChillOutput").innerHTML = "None";
+    document.getElementById("windChillOutput").innerHTML = "NA";
 } else {
     document.getElementById("windChillOutput").innerHTML = result + "&deg;F";
 }
