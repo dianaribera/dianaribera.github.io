@@ -88,7 +88,7 @@ h2{
     font-family: 'Roboto Slab', serif;
     color: var(--secondary-color);
     font-size: 2rem;
-    padding: 5px 0px 5px 20px;
+    padding: 20px 0px 20px 20px;
 }
 
 h3 {
@@ -172,7 +172,7 @@ main div {
     display: grid;
     grid-template-columns: 1fr;
     gap: 15px;
-    margin: 20px;
+    margin: 0px 20px 20px;
 }
 
 figure {
