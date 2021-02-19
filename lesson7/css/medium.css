@@ -95,9 +95,10 @@
         margin: 10px;
     }
 
+    /* image gallery styles */
     .gallery {
         width: auto;
-        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(263px, 1fr));
     }
 
     footer {
