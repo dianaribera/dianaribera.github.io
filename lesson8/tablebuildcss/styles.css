@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap');
+/* colors */
+:root {
+    --primary-color: #628ca6;
+    --secondary-color: #7fb9c2;
+    --accent1-color: #e7f0ed;
+    --accent2-color: #e7ffed;
+    --border-color: #c0c0c0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 25rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+table {
+    width: 18rem;
+    border-collapse: collapse;
+    box-shadow: 5px 10px 18px var(--primary-color);
+}
+
+td, th {
+    padding: 7px;
+    border: 1px solid var(--border-color);
+}
+
+thead tr th { 
+    font-size: 1.5rem;
+    padding: 10px;
+    background-color: var(--secondary-color);
+}
+
+tbody {
+    font-size: 0.95rem;
+}
+
+tbody tr th {
+    color: #fff;
+    font-size: 1.1rem;
+    background-color: var(--primary-color);
+}
+
+.emphasize {
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+#blackfriday {
+    font-style: italic;
+}
+
+tr:nth-child(even) {
+    background-color: var(--accent1-color);
+}
+
+tr:nth-child(odd) {
+    background-color: var(--accent2-color);
+}
+
+tfoot tr td{
+    font-size: 0.7rem;
+    background-color: var(--secondary-color);
+}
