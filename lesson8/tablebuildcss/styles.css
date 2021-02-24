@@ -58,10 +58,6 @@ tbody tr th {
     background-color: var(--primary-color);
 }
 
-#blackfriday {
-    font-style: italic;
-}
-
 tr:nth-child(odd) {
     background-color: var(--accent2-color);
 }
