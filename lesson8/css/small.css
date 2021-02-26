@@ -187,8 +187,8 @@ legend {
     font-family: 'Roboto Slab', serif;
     font-weight: 600;
     color: var(--primary-color);
-    margin: 0 1rem;
-    padding: 0 .5rem;
+    margin: 0 2rem;
+    padding: 0 1rem;
 }
 
 label.above, form div {
@@ -284,7 +284,7 @@ form input.submitBtn {
     border-radius: .5rem;
     padding: .75rem 1.5rem;
     margin-bottom: 20px;
-    margin-left: 15px;
+    margin-left: 10px;
     max-width: 10rem;
 }
 
