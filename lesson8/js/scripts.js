@@ -12,3 +12,10 @@ document.getElementById("currentDate").innerHTML = day[current.getDay()] +
     current.getFullYear();
 
     
+if (current.getDay() == 5) {
+    document.getElementById("breakfast").style.display = "block";
+}
+
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
