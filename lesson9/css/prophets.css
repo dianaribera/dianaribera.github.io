@@ -56,15 +56,16 @@ p {
 img {
     width: 250px;
     margin: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
 footer {
     color: #fff;
     font-family: 'Roboto Slab', serif;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-top: 15px;
-    background: cadetblue;
+    background: rgb(53, 90, 92);
     padding: 10px;
 
 }
