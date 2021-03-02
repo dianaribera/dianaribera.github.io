@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 350px;
+    text-align: center;
+	padding: 0;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    margin: 20px 0px;
+    font-size: 1.8rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+main div {
+    align-items: center;
+    background: rgb(228, 227, 227);
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+}
+
+.cards section {
+    display: block;
+    margin: auto;
+    height: 455px;
+    background-color: rgb(157, 206, 207);
+    border: cadetblue 1px solid;
+    border-radius: 5px;
+}
+
+.cards section:nth-child(1) {
+    display: none;
+}
+
+.cards h2 {
+    margin-top: 5px;
+    font-size: 1.4rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+p {
+    font-size: .9rem;
+    margin: 7px 0px;
+}
+
+img {
+    width: 250px;
+    margin: 15px;
+}
+
+footer {
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    background: cadetblue;
+    padding: 10px;
+
+}
+
+@media only screen and (min-width: 39em) {
+    body {
+        margin: auto;
+        max-width: 700px;
+    }
+    main div {
+        width: auto;
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+    }
+
+}
+
+@media only screen and (min-width: 72.75rem) {
+    body {
+        margin: auto;
+        max-width: 1200px;
+    }
+    main div {
+        width: auto;
+        grid-template-columns: repeat(4, minmax(263px, 1fr));
+        gap: 15px;
+    }
+
+}
