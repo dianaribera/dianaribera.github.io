@@ -104,7 +104,7 @@ h3 {
 .towns {
     display: grid;
     margin: 10px 15px;
-    grid-template-columns: repeat(auto-fill, minmax(250, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 15px;
 }
 
