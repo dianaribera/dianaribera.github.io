@@ -4,7 +4,7 @@ fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
     document.getElementById('current-cond').textContent = jsObject.weather[0].description;
-    document.getElementById('high-temp').textContent = Math.round(jsObject.main.temp_max) + "°F";
+    document.getElementById('temperature').textContent = Math.round(jsObject.main.temp) + "°F";
     document.getElementById('humidity').textContent = jsObject.main.humidity + "%";
     document.getElementById('windSpeed').textContent = jsObject.wind.speed +" mph";
 
