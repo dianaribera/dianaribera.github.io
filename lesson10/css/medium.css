@@ -112,7 +112,7 @@
     }
 
     .weathertable tr:nth-child(2) td {
-        padding: 10px auto 0;
+        padding: 10px 0 0;
     }
 
     .weathertable tr:nth-child(3) td {
