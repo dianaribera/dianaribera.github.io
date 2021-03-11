@@ -92,7 +92,6 @@
         font-family: 'Lato', sans-serif;
         font-weight: 600;
         font-size: 1rem;
-        border: .5px solid #ccc;
         border-collapse: collapse;
     }
     .weathertable th {
@@ -104,7 +103,8 @@
     .weathertable td {
         width: 20%;
         padding-top: 10px;
-        border-right: .5px solid #ccc;
+        border-right: .5px solid #fff;
+        background-color: rgb(235, 235, 235);
     }
 
    .weathertable img {
