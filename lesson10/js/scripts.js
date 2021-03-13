@@ -11,7 +11,6 @@ document.getElementById("currentDate").innerHTML = day[current.getDay()] +
     ", " + current.getDate() + " " + month[current.getMonth()] + ", " +
     current.getFullYear();
 
-
 function adjustRating(rating) {
     document.getElementById("ratingvalue").innerHTML = rating;
 }
