@@ -37,12 +37,14 @@ fetch(apiURL)
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     for (let day = 0; day < forecast.length; day++) {
       const d = new Date(forecast[day].dt_txt);
+      document.getElementById(`day${day+1}`).textContent = days[d.getDay()];
+
       const imagesrc = 'https://openweathermap.org/img/wn/' + forecast[day].weather[0].icon + '@2x.png';
       const desc = forecast[day].weather[0].description;
-      document.getElementById(`day${day+1}`).textContent = days[d.getDay()];
-      document.getElementById(`temp${day+1}`).textContent = Math.round(forecast[day].main.temp) + '°F';
       document.getElementById(`icon${day+1}`).setAttribute('src', imagesrc);
       document.getElementById(`icon${day+1}`).setAttribute('alt', desc);
+
+      document.getElementById(`temp${day+1}`).textContent = Math.round(forecast[day].main.temp) + '°F';
     }
 
   });
