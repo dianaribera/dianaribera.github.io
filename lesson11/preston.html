@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Birds of a Weather Preston, Idaho weather and local data">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="sytlesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Birds of a Weather Preston, Idaho</title>
+  </head>
+  <body>
+    <div id="breakfast"><p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p></div>
+    <header>
+      <img class="logo" src="images/birds-of-a-weather-logo2.svg" alt="Birds of a Weather Logo">
+      <div class="m">We stick together</div>
+    </header>
+  <nav>
+    <img class="hamburger" onclick="toggleMenu()" src="images/hamburger-icon.svg" alt="Hamburger icon" role="button">
+    <ul id="primaryNav" class="hide">
+      <li><a href="index.html">Home</a></li>
+      <li class="current"><a href="preston-10.html">Preston</a></li>
+      <li><a href="soda-springs.html">Soda Springs</a></li>
+      <li><a href="fish-haven.html">Fish Haven</a></li>
+      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li><a class="noborder" href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Preston, Idaho</h2>
+    <div class="herodiv">
+      <figure class="hero">
+        <img src="images/hero.jpg" alt="City of Rocks" sizes="100vw"
+             srcset="images/hero600.jpg 600w,
+             images/hero900.jpg 900w,
+             images/hero1100.jpg 1100w">
+      </figure>
+      <section class="weathersummary">
+        <h3>Weather Summary for <span id="day"></span></h3>
+        <hr class="line">
+        <p>Currently: <span id="current-cond"></span><br>
+        Temperature: <span id="temperature"></span><br>
+        Wind Chill: <span id="windChillOutput"></span><br>
+        Humidity: <span id="humidity"></span><br>
+        Windspeed: <span id="windSpeed"></span></p>
+      </section>
+    </div>
+    <div class="forecast">
+      <h3>5 Day Forecast</h3>
+      <table class="weathertable">
+        <tr>
+          <th><span id="day1"></span></th>
+          <th><span id="day2"></span></th>
+          <th><span id="day3"></span></th>
+          <th><span id="day4"></span></th>
+          <th><span id="day5"></span></th>
+        </tr>
+        
+        <tr>
+          <td><img id="icon1" class="icon" src="https://openweathermap.org/img/w/" alt="weather icon"></td>
+          <td><img id="icon2" class="icon" src="https://openweathermap.org/img/w/" alt="weather icon"></td>
+          <td><img id="icon3" class="icon" src="https://openweathermap.org/img/w/" alt="weather icon"></td>
+          <td><img id="icon4" class="icon" src="https://openweathermap.org/img/w/" alt="weather icon"></td>
+          <td><img id="icon5" class="icon" src="https://openweathermap.org/img/w/" alt="weather icon"></td>
+        </tr>
+        <tr>
+          <td id="temp1"></td>
+          <td id="temp2"></td>
+          <td id="temp3"></td>
+          <td id="temp4"></td>
+          <td id="temp5"></td>
+        </tr>
+      </table>
+    </div>
+    <article class="article">
+      <figure class="hero">
+        <img src="images/article.jpg" alt="Founders Day Event" sizes="50vw"
+             srcset="images/article300.jpg 300w,
+             images/article500.jpg 450w,
+             images/article700.jpg 550w">
+      </figure>
+      <h4>Founders Day Fresco</h4>
+      <cite>by Joseph Richardson</cite>
+      <p>I was recently reflecting upon the founders day event held at Foundation Park each year. I have been taking the festival for granted and have not been properly engaging in perhaps the most popular community event of the year. In response, I contaced Ms. Sharon via email and expressed my desire to serve on the event committee. Well, you guessed it, the phone rings almost immediately and she promptly asks me to be the event committee chair. Literally, good grief! My appreciation for the years of dedicated, generous service of volunteers and sponsors has escalated beyond what I thought I could feel for such a thing and... <span class="continue">continue to full article</span></p>
+    </article>
+  </main>
+  <footer>
+    <div id="mainfooter">
+      <img class="map" src="images/map.jpg" alt="map">
+      <h4 class="left">Birds of a Weather</h4>  
+      <p class="left"><img class="icon" src="images/pin.svg" alt="location pin icon">350 East 1243 North<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Preston, ID 83263</p>
+      <br>
+      <p class="left"><img class="icon" src="images/phone.svg" alt="phone icon">123.456.7890<br>
+        <img class="icon" src="images/mail.svg" alt="mail icon">info@birdsofaweather.com</p>
+        <div class="social left"><a href="#"><img src="images/facebook.svg" alt="facebook icon"></a><a href="#"><img src="images/instagram.svg" alt="instagram icon"></a><a href="#"><img src="images/twitter.svg" alt="twitter icon"></a></div>
+    </div>
+    <div id="bottom-footer">
+        <p id="currentDate"></p>
+        <p>&copy; 2021 Birds of a Weather</p>
+        <p class="credit">*All current weather data provided by <a href="https://openweathermap.org" target="blank">openweathermap.org</a></p>
+    </div>
+  </footer>
+  <script src="js/scripts.js"></script>
+  <script src="js/preston-weather.js"></script>
+  <script src="js/pancake.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: [
+            'Open Sans:300,400,600,700', 'Roboto Slab:300,400,500,600,800,900'
+          ]
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Birds of a Weather Storm Reporter">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="sytlesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Birds of a Weather Report a Storm</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="images/birds-of-a-weather-logo2.svg" alt="Birds of a Weather Logo">
+      <div class="m">We stick together</div>
+    </header>
+  <nav>
+    <img class="hamburger" onclick="toggleMenu()" src="images/hamburger-icon.svg" alt="Hamburger icon" role="button">
+    <ul id="primaryNav" class="hide">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="preston.html">Preston</a></li>
+      <li><a href="soda-springs.html">Soda Springs</a></li>
+      <li><a href="fish-haven.html">Fish Haven</a></li>
+      <li class="current"><a href="stormcenter.html">Storm Center</a></li>
+      <li><a class="noborder" href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Storm Center</h2>
+    <div class="form-wrapper">
+      <form method="get" action="thanks.html">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label class="above">Full Name* <input type="text" name="name" required pattern="^(\w\w+)\s(\w\w+)$" minlength="5"></label>
+            <label class="above">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+            <label class="above">Phone* <input type="tel" name="phone" placeholder="5551234567" required></label>
+            <label class="above">Zip Code* <input type="number" name="zip" required></label>
+        </fieldset>
+        <fieldset>
+            <legend>Storm Specifics</legend>
+            <label class="above">Storm Date<input type="date" name="completedDate"></label>
+
+            <label class="above">Storm Type
+              <input list="stormtypes" name="stormtype">
+              <datalist id="stormtypes">
+                <option value="Flash Flood">
+                <option value="Hail">
+                <option value="Hurricane">
+                <option value="Thunderstorm">
+                <option value="Tornado">
+              </datalist>
+            </label>
+
+            <label class="slidelabel" for="rating">Storm Severity <br>
+              <input class="slider" type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+              <span id="ratingvalue">5</span>
+            </label>
+
+            <label class="above">Storm Region 
+                <select name="region">
+                    <option>Please Select &nbsp; &#9662;</option>
+                    <option value="fishhaven">Fish Haven</option>
+                    <option value="preston">Preston</option>
+                    <option value="sodasprings">Soda Springs</option>
+                </select>
+              </label>
+
+            <div>Are you in immediate danger?</div>
+            <label class="radio"><input type="radio" name="danger" value="yes"> Yes</label>
+            <label class="radio"><input type="radio" name="danger" value="maybe"> Maybe</label>
+            <label class="radio"><input type="radio" name="danger" value="no"> No</label>
+
+            <label class="textarea">Additional Information<br>
+            <textarea class="textinput" name="comment" placeholder="Enter comments here"></textarea>
+            </label>
+
+        </fieldset>
+        <input type="submit" value="REPORT STORM" class="submitBtn">
+      </form>
+    </div>
+  </main>
+  <footer>
+    <div id="mainfooter">
+      <img class="map" src="images/map.jpg" alt="map">
+      <h4 class="left">Birds of a Weather</h4>  
+      <p class="left"><img class="icon" src="images/pin.svg" alt="location pin icon">350 East 1243 North<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Preston, ID 83263</p>
+      <br>
+      <p class="left"><img class="icon" src="images/phone.svg" alt="phone icon">123.456.7890<br>
+        <img class="icon" src="images/mail.svg" alt="mail icon">info@birdsofaweather.com</p>
+        <div class="social left"><a href="#"><img src="images/facebook.svg" alt="facebook icon"></a><a href="#"><img src="images/instagram.svg" alt="instagram icon"></a><a href="#"><img src="images/twitter.svg" alt="twitter icon"></a></div>
+    </div>
+    <div id="bottom-footer">
+        <p id="currentDate"></p>
+        <p>&copy; 2021 Birds of a Weather</p>
+    </div>
+  </footer>
+  <script src="js/scripts.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: [
+            'Open Sans:300,400,600,700', 'Roboto Slab:300,400,500,600,800,900'
+          ]
+        }
+      });
+    </script>
+  </body>
+</html>
