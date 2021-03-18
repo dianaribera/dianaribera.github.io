@@ -104,7 +104,7 @@ h3 {
 .towns {
     display: grid;
     margin: 10px 15px;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
     gap: 15px;
 }
 
@@ -137,12 +137,13 @@ h3 {
 /* city pages */
 
 .herodiv {
-    width: 130%;
+    width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .hero img {
-    width: 170%;
+    min-width: 130%;
     overflow: hidden;
 }
 
@@ -181,6 +182,29 @@ h3 {
 
 .forecast {
     display: none;
+}
+
+.events {
+    width: 94%;
+    margin: 30px auto 35px;
+    background-color: rgb(235, 235, 235);
+    padding: 15px 40px;
+}
+
+.events h3 {
+    color: var(--secondary-color);
+}
+
+.events li {
+    list-style-type: none;
+    font-size: .9rem;
+    line-height: 1.8rem;
+
+}
+
+.events li::before {
+    content: '» ';
+    color: var(--accent2-color);
 }
 
 .article {

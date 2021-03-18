@@ -6,18 +6,17 @@
 
     main {
         max-width: 1000px;
-        margin: auto;
     
     }
 
     .herodiv {
-        width: 96%;
+        width: 97%;
         margin: auto;
         overflow: hidden;
     }
 
     .herodiv .hero img {
-        width: 100%;
+        min-width: 100%;
         overflow: hidden;
     }
 
@@ -39,6 +38,11 @@
     .weathersummary p {
         margin-top: 10px;
         font-size: 0.9rem;
+    }
+
+    .events {
+        width: 55%;
+        padding-left: 5%;
     }
 
     /*  index  */

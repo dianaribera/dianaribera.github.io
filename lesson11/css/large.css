@@ -26,8 +26,8 @@
         border-right: none;
     }
 
-    .herodiv .hero img {
-        width: 100%;
+    .events {
+        width: 50%;
     }
 
     .towns {
@@ -38,6 +38,7 @@
 
     .town {
         display: block;
+        min-height: 480px;
     }
 
     .town h4 {

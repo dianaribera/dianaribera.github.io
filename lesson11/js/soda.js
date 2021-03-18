@@ -1,4 +1,4 @@
-const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=3738fdc9983f5ba04c511ad6a0cc5685';
+const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&appid=3738fdc9983f5ba04c511ad6a0cc5685';
 
 fetch(apiURL)
   .then((response) => response.json())
@@ -26,7 +26,7 @@ fetch(apiURL)
     }
   });
 
-  const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=3738fdc9983f5ba04c511ad6a0cc5685';
+  const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&appid=3738fdc9983f5ba04c511ad6a0cc5685';
 
   fetch(forecastURL)
   .then((response) => response.json())
@@ -50,3 +50,25 @@ fetch(apiURL)
     document.getElementById('day').innerHTML = day[current.getDay()];
 
   });
+
+  const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const towns = jsonObject['towns'];
+
+    const sodafilter = towns.filter(x => x.name == 'Soda Springs');
+    let sodaEvents = sodafilter[0].events;
+    let ul = document.createElement('ul'); 
+
+    sodaEvents.forEach(info => {
+    let listItem = document.createElement('li');
+    listItem.innerHTML = info;
+    ul.appendChild(listItem);
+  }); 
+
+  document.getElementById("soda-events").appendChild(ul);
+});
