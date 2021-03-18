@@ -67,11 +67,11 @@ nav ul li a {
 }
 
 nav ul li.current a {
-    background-color: rgba(0,0,0,0.2);
+    background-color: var(--secondary-color);
 }
 
 nav ul li a:hover {
-	background: rgba(0,0,0,0.4);
+	background: var(--accent2-color);
 }
 
 img.hamburger {
