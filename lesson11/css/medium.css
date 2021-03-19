@@ -60,7 +60,7 @@
         margin: 40px 0 0;
     }
 
-    .towns section:nth-child(even) {
+    .towns div:nth-child(odd) {
         flex-direction: row-reverse;
     }
 
