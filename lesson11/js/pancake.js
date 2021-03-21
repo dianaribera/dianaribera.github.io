@@ -1,8 +1,7 @@
-document.getElementById("currentDate").innerHTML = day[current.getDay()] +
-    ", " + current.getDate() + " " + month[current.getMonth()] + ", " +
-    current.getFullYear();
+var d = new Date();
+var c = d.getDay();
 
     
-if (current.getDay() == 5) {
+if (c == 5) {
     document.getElementById("breakfast").style.display = "block";
-}
+}                                                                                                                                                   
