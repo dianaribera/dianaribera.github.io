@@ -1,0 +1,29 @@
+@media only screen and (min-width: 53.75rem) {
+
+    nav ul li a {
+        padding: .6rem 1rem;
+    }
+
+    nav ul { display: flex; }
+    nav ul li { flex: 1 1 100%; 
+    }
+
+    nav img.hamburger {
+        display: none;
+    }
+    
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: .8rem 1rem;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    ul li a.noborder {
+        border-right: none;
+    }
+
+}

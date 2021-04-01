@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kaysville Chamber of Commerce Overview">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="sytlesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css"> 
+    <link rel="stylesheet" href="css/medium.css"> 
+    <link rel="stylesheet" href="css/large.css">
+    <title>Kaysville Chamber of Commerce Purpose and Goals</title>
+  </head>
+  <body>
+    <header>
+      <a href="./"><img class="logo" src="images/logo-01.svg" alt="Kaysville Chamber of Commerce Logo"></a>
+    </header>
+  <nav>
+    <img class="hamburger" onclick="toggleMenu()" src="images/hamburger-icon.svg" alt="Hamburger icon" role="button">
+    <ul id="primaryNav" class="hide">
+      <li class="current"><a href="./">Home</a></li>
+      <li><a href="kaysville.html">Kaysville</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a class="noborder" href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Home</h1>
+    
+
+  </main>
+  <footer>
+    <div id="footer-wrapper">
+      <div id="mainfooter">
+        <div id="map"></div>
+        <p class="bold">Kaysville Chamber of Commerce</p>  
+        <p><img class="icon" src="images/pin.svg" alt="location pin icon">350 East 1243 North<br>
+          Preston, ID 83263
+        </p>
+        <br>
+        <p><img class="icon" src="images/phone.svg" alt="phone icon">123.456.7890<br>
+          <img class="icon" src="images/mail.svg" alt="mail icon">info@birdsofaweather.com
+        </p>
+        <div class="social left">
+          <a href="#"><img src="images/facebook.svg" alt="facebook icon"></a>
+          <a href="#"><img src="images/instagram.svg" alt="instagram icon"></a>
+          <a href="#"><img src="images/twitter.svg" alt="twitter icon"></a>
+        </div>
+      </div>
+      <div id="bottom-footer">
+          <p id="currentDate"></p>
+          <p>
+            Last Updated: <span id="dateLastModified"></span>
+          </p>
+          <p>&copy; 2021 Kaysville Chamber of Commerce</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/scripts.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: [
+            'Source Sans Pro:300,400,600,700', 'Volkhov:400,800'
+          ]
+        }
+      });
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly" async></script>
+  </body>
+</html>
