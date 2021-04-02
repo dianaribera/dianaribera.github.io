@@ -17,18 +17,3 @@ function adjustRating(rating) {
 
 var x = document.lastModified;
 document.getElementById("dateLastModified").innerHTML = x;
-
-function initMap() {
-    // The location of Uluru
-    const kaysville = { lat: 41.035, lng: -111.937 };
-    // The map, centered at Uluru
-    const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 4,
-      center: kaysville,
-    });
-    // The marker, positioned at Uluru
-    const marker = new google.maps.Marker({
-      position: kaysville,
-      map: map,
-    });
-  }

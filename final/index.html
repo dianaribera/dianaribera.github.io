@@ -14,51 +14,120 @@
   <body>
     <header>
       <a href="./"><img class="logo" src="images/logo-01.svg" alt="Kaysville Chamber of Commerce Logo"></a>
+      <div class="position">
+        <nav>
+          <img class="hamburger" onclick="toggleMenu()" src="images/Hamburger_icon.svg" alt="Hamburger icon" role="button">
+          <ul id="primaryNav" class="hide">
+            <li class="current"><a href="./">Home</a></li>
+            <li><a href="kaysville.html">Kaysville</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html" class="noborder">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-  <nav>
-    <img class="hamburger" onclick="toggleMenu()" src="images/hamburger-icon.svg" alt="Hamburger icon" role="button">
-    <ul id="primaryNav" class="hide">
-      <li class="current"><a href="./">Home</a></li>
-      <li><a href="kaysville.html">Kaysville</a></li>
-      <li><a href="join.html">Join</a></li>
-      <li><a href="directory.html">Directory</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-      <li><a class="noborder" href="gallery.html">Gallery</a></li>
-    </ul>
-  </nav>
-  <main>
-    <h1>Home</h1>
-    
+  
+    <main>
+      <div class="herodiv">
+        <h1 class="hero-text">Welcome to Kaysville!</h1>
+          <img src="images/hero-index.jpg" alt="Mountains in the Spring" sizes="100vw"
+               srcset="images/hero-index500.jpg 500w,
+               images/hero-index800.jpg 800w,
+               images/hero-index1000.jpg 1000w" loading="lazy">
+      </div>
+      <div class="divider">
+        <h1>Chamber of Commerce</h1>
+      </div>
+      <div class="ads">
+        <a href="https://thekaysvilletheatre.com/" target="_blank"><div class="ad-container theater">
+          <p class="business-name">Kaysville Theater</p><br><br><br>
+          <div class="business-info">
+            <p><img class="icon" src="images/pin.svg" alt="location pin icon">21 North Main Street</p>
+            <p><img class="icon" src="images/phone.svg" alt="phone icon">801.546.3400</p>
+          </div>
+        </div></a>
+        <a href="http://www.orlandosonmain.com/" target="_blank"><div class="ad-container orlandos">
+          <p class="business-name">Orlando's</p><br><br><br>
+          <div class="business-info">
+            <p><img class="icon" src="images/pin.svg" alt="location pin icon">21 North Main Street</p>
+            <p><img class="icon" src="images/phone.svg" alt="phone icon">801.546.3400</p>
+            </div>
+          </div></a>
+          <a href="https://www.daviscountyutah.gov/library/locations/kaysville-branch" target="_blank"><div class="ad-container library">
+          <p class="business-name">Davis Library</p><br><br><br>
+          <div class="business-info">
+            <p><img class="icon" src="images/pin.svg" alt="location pin icon">21 North Main Street</p>
+            <p><img class="icon" src="images/phone.svg" alt="phone icon">801.546.3400</p>
+          </div>
+        </div></a>
+      </div>
+      <div class="center">
+        <button type="button"><a href="join.html">JOIN HERE</a></button>
+      </div>
+      <div class="goals">
+        <h2>Commerce Purpose:</h2>
+        <p>By combining networking opportunities for businesses of all sizes with a robust Legislative Affairs presence in Utah, the Chamber is better able to meet its mission of advancing business prosperity in Kaysville. By utilizing the strengths of its general membership, the Chamber’s influence is felt throughout our county and state.</p>
+        <h2>Goals:</h2>
+        <p><ul>
+          <li>Provide growth opportunities for local business</li>
+          <li>Create a stronger community</li>
+          <li>Represent the needs and voices of business owners in our community</li>
+          <li>Bring recognition to small businesses</li>
+        </ul></p>
+      </div>
+      <div class="divider">
+        <h1>Events</h1>
+      </div>
+      <div class="events">
+        <p><span class="event-name">» Tue April 6</span> - Business Alliance Networking Luncheon</p>
+        <p><span class="event-name">» Sun April 4 - Sat April 10</span> - Kaysville City Musical Auditions</p>
+        <p><span class="event-name">» Sat April 24</span> - Arbor Day Planting</p>
+        <p><span class="event-name">» Mon May 31</span> - Memorial Day Program</p>
+      </div>
+      <section class="weathersummary">
+        <h3>Weather Summary for <span id="day"></span></h3>
+        <hr class="line">
+        <p>Currently: <span id="current-cond"></span><br>
+        Temperature: <span id="temperature"></span><br>
+        Wind Chill: <span id="windChillOutput"></span><br>
+        Humidity: <span id="humidity"></span><br>
+        Windspeed: <span id="windSpeed"></span></p>
+      </section>
 
-  </main>
-  <footer>
-    <div id="footer-wrapper">
-      <div id="mainfooter">
-        <div id="map"></div>
-        <p class="bold">Kaysville Chamber of Commerce</p>  
-        <p><img class="icon" src="images/pin.svg" alt="location pin icon">350 East 1243 North<br>
-          Preston, ID 83263
-        </p>
-        <br>
-        <p><img class="icon" src="images/phone.svg" alt="phone icon">123.456.7890<br>
-          <img class="icon" src="images/mail.svg" alt="mail icon">info@birdsofaweather.com
-        </p>
-        <div class="social left">
-          <a href="#"><img src="images/facebook.svg" alt="facebook icon"></a>
-          <a href="#"><img src="images/instagram.svg" alt="instagram icon"></a>
-          <a href="#"><img src="images/twitter.svg" alt="twitter icon"></a>
+    </main>
+    <footer>
+      <div id="main-footer-wrapper">
+        <div id="mainfooter">
+            <p class="bold">Kaysville Chamber of Commerce</p>  
+            <p><img class="icon" src="images/pin.svg" alt="location pin icon">23 East Center Street<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kaysville, Utah 84037
+            </p>
+            <p><img class="icon" src="images/phone.svg" alt="phone icon">123.456.7890<br>
+              <img class="icon" src="images/mail.svg" alt="mail icon">info@kaysvillecc.com
+            </p>
+            <div class="social">
+              <a href="#"><img src="images/facebook.svg" alt="facebook icon"></a>
+              <a href="#"><img src="images/instagram.svg" alt="instagram icon"></a>
+              <a href="#"><img src="images/twitter.svg" alt="twitter icon"></a>
+            </div>
+            <br>
+          <div class="info-links">
+              <p id="currentDate"></p>
+            <p>
+              Last Updated: <span id="dateLastModified"></span>
+            </p>
+            <p>&copy; 2021 Kaysville Chamber of Commerce</p>
+            <p><a href="attributions.html">Attributions</a></p>
+          </div>
         </div>
       </div>
-      <div id="bottom-footer">
-          <p id="currentDate"></p>
-          <p>
-            Last Updated: <span id="dateLastModified"></span>
-          </p>
-          <p>&copy; 2021 Kaysville Chamber of Commerce</p>
-      </div>
-    </div>
-  </footer>
+        <div id="bottom-footer">
+           
+        </div>
+    </footer>
   <script src="js/scripts.js"></script>
+  <script src="js/weather.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
       WebFont.load({
@@ -69,6 +138,5 @@
         }
       });
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly" async></script>
   </body>
 </html>
