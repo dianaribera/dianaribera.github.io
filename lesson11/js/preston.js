@@ -31,7 +31,7 @@ fetch(apiURL)
   fetch(forecastURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    // console.log(jsObject);
+    console.log(jsObject);
 
     var forecast = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];

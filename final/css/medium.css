@@ -40,6 +40,10 @@
         display: flex;
     }
 
+    main {
+        max-width: 1000px;
+    }
+
     .herodiv {
         width: 96%;
         margin: 0 auto;
@@ -74,8 +78,17 @@
         margin-left: 0px;
     }
 
-    main {
-        max-width: 1000px;
+    .weather {
+        grid-template-columns: 1fr 2fr;
+        width: 600px;
+    }
+
+    .weathersummary {
+        padding-left: 30px;
+    }
+
+    .forecast {
+        padding-left: 60px;
     }
 
     #main-footer-wrapper {
@@ -86,8 +99,7 @@
 
     #mainfooter {
         margin: 0 auto;
-        max-width: 700px;
-        min-height: 200px;
+        max-width: 600px;
         columns: 2;
     }
 
@@ -96,4 +108,5 @@
         width: 80%;
         margin: auto;
       }
-    
+
+    }

@@ -58,6 +58,7 @@ nav ul li a:hover {
 	background: var(--accent2-color);
     color: #000;
     font-weight: 900;
+    text-decoration: none;
 }
 
 img.hamburger {
@@ -80,6 +81,32 @@ h1{
     font-size: 1.5rem;
     margin: 0;
     padding: 10px;
+}
+
+h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 0px;
+}
+
+h3 {
+    font-family: 'Volkhov', serif;
+    font-size: 1.3rem;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+p {
+    margin: 0;
 }
 
 .herodiv {
@@ -105,22 +132,6 @@ h1{
     margin: -4px auto 10px;
 }
 
-h2 {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.2rem;
-    color: #fff;
-    margin-top: 0px;
-}
-
-h3 {
-    font-family: 'Volkhov', serif;
-    font-size: 1.5rem;
-}
-
-a {
-    text-decoration: none;
-}
-
 .ads {
     display: flex;
     flex-wrap: wrap;
@@ -134,6 +145,11 @@ a {
     height: 200px;
     color: #fff;
     border-radius: 10px;
+}
+
+.ads a:hover {
+    font-weight: 400;
+    text-decoration: none;
 }
 
 .theater {
@@ -151,13 +167,12 @@ a {
     background-repeat: none;
 }
 
-.ad-container:hover {
-    box-shadow: 0px 0px 5px darkslategray;
+.ad-container {
+    margin: 5px;
 }
 
-.ad-container a {
-    color: #fff;
-    text-decoration: none;
+.ad-container:hover {
+    box-shadow: 0px 0px 5px darkslategray;
 }
 
 .ad-container p {
@@ -182,10 +197,6 @@ a {
     padding: 15px;
 }
 
-p {
-    margin: 0;
-}
-
 .center {
     text-align: center;
 }
@@ -200,6 +211,7 @@ button {
     padding: 10px 35px;
     font-size: .9rem;
     border-radius: 10px;
+    transition: all .2s ease-in-out;
 }
 
 button a {
@@ -207,9 +219,14 @@ button a {
     text-decoration: none;
 }
 
+button a:hover {
+    text-decoration: none;
+}
+
 button:hover {
     background-color: var(--secondary-color);
     font-weight: 600;
+    transform: scale(1.1);
 }
 
 .goals {
@@ -238,6 +255,65 @@ button:hover {
     color: var(--accent1-color)
 }
 
+.weather {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 320px;
+    margin: 15px auto;
+}
+
+.weathersummary {
+    background-color: var(--background-color);
+    padding-left: 15px;
+}
+
+.weathersummary span {
+    font-weight: 800;
+}
+
+.forecast {
+    background-color: var(--background-color);
+    padding-left: 15px;
+}
+
+.weathertable {
+    width: 100%;
+    width: 290px;
+    text-align: center;
+    margin: 20px 0 20px 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    border-collapse: collapse;
+}
+.weathertable th {
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-right: .5px solid #ccc;
+}
+.weathertable td {
+    border-right: .5px solid #fff;
+    background-color: rgb(191, 207, 207);
+}
+
+.weathertable td:last-child {
+    border-right: none;
+}
+
+.weathertable img {
+    width: 85px;
+}
+
+.weathertable tr:nth-child(3) td {
+    margin-top: -10px;
+    padding-bottom: 10px;
+}
+
+#current-cond {
+    text-transform: capitalize;
+}
+
 footer {
     background-color: var(--accent1-color);
     color: #fff;
@@ -248,12 +324,7 @@ footer {
 }
 
 #mainfooter {
-    text-align: left;
     max-width: 330px;
-}
-
-#map {
-    display: none;
 }
 
 .bold {
@@ -261,6 +332,7 @@ footer {
     font-size: 1.3rem;
     font-weight: 800;
 }
+
 .icon {
     max-width: 25px;
     margin: 5px 3px -7px 0px;
@@ -290,8 +362,7 @@ footer {
 }
 
 .info-links {
-    margin-top: 60px;
-    margin-left: 20px;
+    margin-top: 10px;
 }
 
 #bottom-footer {

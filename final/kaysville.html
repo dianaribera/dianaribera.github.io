@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Kaysville Chamber of Commerce Overview">
+    <meta name="description" content="Kaysville Chamber of Commerce History and Demographics">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="sytlesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css"> 
     <link rel="stylesheet" href="css/medium.css"> 
     <link rel="stylesheet" href="css/large.css">
-    <title>Kaysville Chamber of Commerce Purpose and Goals</title>
+    <title>Kaysville History and Demographics</title>
   </head>
   <body>
     <header>
@@ -19,23 +19,36 @@
           <img class="hamburger" onclick="toggleMenu()" src="images/Hamburger_icon.svg" alt="Hamburger icon" role="button">
           <ul id="primaryNav" class="hide">
             <li><a href="./">Home</a></li>
-            <li><a href="kaysville.html">Kaysville</a></li>
+            <li class="current"><a href="kaysville.html">Kaysville</a></li>
             <li><a href="join.html">Join</a></li>
             <li><a href="directory.html">Directory</a></li>
-            <li class="current"><a href="contact.html" class="noborder">Contact</a></li>
+            <li><a href="contact.html" class="noborder">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
   
     <main>
-      <h1>Contact Us</h1>
-      <br>
-      <p>https://davischamberofcommerce.com/about-the-chamber/</p>
-      <p>https://www.kaysvillecity.com/</p>
-    
+      <div class="herodiv">
+          <img src="images/hero-a.jpg" alt="Historic Cabin in Kaysville" sizes="100vw"
+               srcset="images/hero-a500.jpg 500w,
+               images/hero-a800.jpg 800w,
+               images/hero-a1000.jpg 1000w" loading="lazy">
+      </div>
+      <div class="divider">
+        <h1>Kaysville, Utah's Hometown</h1>
+      </div>
       
-
+      <div class="divider">
+        <h1>Events</h1>
+      </div>
+      <div class="events">
+        <p><span class="event-name">» Tue April 6</span> - Business Alliance Networking Luncheon</p>
+        <p><span class="event-name">» Sun April 4 - Sat April 10</span> - Kaysville City Musical Auditions</p>
+        <p><span class="event-name">» Sat April 24</span> - Arbor Day Planting</p>
+        <p><span class="event-name">» Mon May 31</span> - Memorial Day Program</p>
+      </div>
+      
     </main>
     <footer>
       <div id="main-footer-wrapper">
@@ -67,6 +80,7 @@
         </div>
     </footer>
   <script src="js/scripts.js"></script>
+  <script src="js/weather.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
       WebFont.load({

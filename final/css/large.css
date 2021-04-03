@@ -25,4 +25,7 @@
         border-right: none;
     }
 
+    #mainfooter {
+        max-width: 750px;
+    }
 }
