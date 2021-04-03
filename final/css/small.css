@@ -55,7 +55,7 @@ nav ul li.current a {
 }
 
 nav ul li a:hover {
-	background: var(--accent2-color);
+	background: rgb(191, 207, 207);
     color: #000;
     font-weight: 900;
     text-decoration: none;
@@ -145,6 +145,7 @@ p {
     height: 200px;
     color: #fff;
     border-radius: 10px;
+    margin: 10px 0;
 }
 
 .ads a:hover {
@@ -165,10 +166,6 @@ p {
 .library {
     background-image: url(../images/library.jpg);
     background-repeat: no-repeat;
-}
-
-.ad-container {
-    margin: 5px;
 }
 
 .ad-container:hover {
@@ -207,35 +204,32 @@ a.button {
     border: none;
     color: #fff;
     font-weight: 400;
-    letter-spacing: 1.3px;
-    margin: 20px auto 35px;
+    letter-spacing: 2.5px;
     padding: 10px 35px;
-    font-size: .9rem;
+    font-size: 1rem;
     border-radius: 10px;
-    transition: 0.3s;
+    transition: all .2s ease-in-out;
 }
 
 a.button:hover {
     text-decoration: none;
     background-color: var(--secondary-color);
-    font-size: 1.2;
     font-weight: 600;
-    padding: 15px 45px;
 }
 
-.goals {
+.text-box {
     background-color: var(--primary-color);
     padding: 15px 20px;
-    margin: 30px auto;
+    margin: 20px auto 30px;
 }
 
-.goals p {
+.text-box p {
     color: #fff;
-    margin-top: -15px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    line-height: 1.4rem;
 }
 
-.goals ul li {
+.text-box ul li {
     color: #fff;
 }
 
