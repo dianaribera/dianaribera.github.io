@@ -141,7 +141,7 @@ p {
 }
 
 .ad-container {
-    width: 250px;
+    width: 300px;
     height: 200px;
     color: #fff;
     border-radius: 10px;
@@ -154,17 +154,17 @@ p {
 
 .theater {
     background-image: url(../images/theater.jpg);
-    background-repeat: none;
+    background-repeat: no-repeat;
 }
 
 .orlandos {
     background-image: url(../images/orlandos.jpg);
-    background-repeat: none;
+    background-repeat: no-repeat;
 }
 
 .library {
     background-image: url(../images/library.jpg);
-    background-repeat: none;
+    background-repeat: no-repeat;
 }
 
 .ad-container {
@@ -201,8 +201,9 @@ p {
     text-align: center;
 }
 
-button {
+a.button {
     background-color: var(--primary-color);
+    text-decoration: none;
     border: none;
     color: #fff;
     font-weight: 400;
@@ -211,28 +212,22 @@ button {
     padding: 10px 35px;
     font-size: .9rem;
     border-radius: 10px;
-    transition: all .2s ease-in-out;
+    transition: 0.3s;
 }
 
-button a {
-    color: #fff;
+a.button:hover {
     text-decoration: none;
-}
-
-button a:hover {
-    text-decoration: none;
-}
-
-button:hover {
     background-color: var(--secondary-color);
+    font-size: 1.2;
     font-weight: 600;
-    transform: scale(1.1);
+    padding: 15px 45px;
+
 }
 
 .goals {
     background-color: var(--primary-color);
     padding: 15px 20px;
-    margin-bottom: 40px;
+    margin: 30px auto;
 }
 
 .goals p {
