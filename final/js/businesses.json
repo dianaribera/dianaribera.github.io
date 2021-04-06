@@ -5,56 +5,56 @@
             "address" : "525 South Deseret Drive",
             "phone" : "801-660-6800",
             "logo" : "images/boondocks.png",
-            "website" : "https://kaysville.boondocks.com/"
+            "website" : "https://kaysville.boondocks.com"
         },
         {
             "name" : "Bowman's Market",
             "address" : "326 Main Street",
             "phone" : "385-209-0100",
             "logo" : "images/bowmans.png",
-            "website" : "https://www.bowmansmarket.com/shop/home"
+            "website" : "https://www.bowmansmarket.com"
         },
         {
             "name" : "Cherry Hill",
             "address" : "1325 South Main Street",
             "phone" : "801-451-5379",
             "logo" : "images/cherry-hill.png",
-            "website" : "https://www.cherry-hill.com/"
+            "website" : "https://www.cherry-hill.com"
         },
         {
             "name" : "Davis Library",
             "address" : "215 North Fairfield Rd",
             "phone" : "801-451-1800",
-            "logo" : "library-logo.png",
-            "website" : "https://www.daviscountyutah.gov/library/locations/kaysville-branch"
+            "logo" : "images/library-logo.png",
+            "website" : "https://www.daviscountyutah.gov/library"
         },
         {
             "name" : "Get Air",
             "address" : "1188 Sportsplex Drive Suite 110",
             "phone" : "801-499-5247",
-            "logo" : "getair.svg",
-            "website" : "https://getairsports.com/kaysville/"
+            "logo" : "images/getair.svg",
+            "website" : "https://getairsports.com/kaysville"
         },
         {
             "name" : "Kaysville Theater",
             "address" : "21 Main Street",
             "phone" : "801-546-3400",
             "logo" : "images/theater.png",
-            "website" : "https://thekaysvilletheatre.com/"
+            "website" : "https://thekaysvilletheatre.com"
         },
         {
             "name" : "Orlando's Mexican Restaurant",
             "address" : "141 North Main Street",
             "phone" : "385-209-2284",
             "logo" : "images/orlandos.png",
-            "website" : "http://www.orlandosonmain.com/"
+            "website" : "http://www.orlandosonmain.com"
         },
         {
             "name" : "Sweet Cake Bake Shop",
             "address" : "237 West 200 North",
             "phone" : "801-444-3288",
-            "logo" : "images/sweet-cake.jpeg",
-            "website" : "https://www.sweetcakebakeshop.com/"
+            "logo" : "images/sweet-cake.jpg",
+            "website" : "https://www.sweetcakebakeshop.com"
         }
     ]
 }

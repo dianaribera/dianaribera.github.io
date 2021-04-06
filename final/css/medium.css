@@ -90,6 +90,60 @@
         padding-left: 60px;
     }
 
+    /*------ directory -------*/
+
+    #btnContainer {
+        margin-left: 1rem;
+    }
+    
+    .btn {
+        display: inline-block;
+        border: none;
+        outline: none;
+        padding: 12px 16px;
+        background-color: #f1f1f1;
+        cursor: pointer;
+    }
+      
+    .btn:hover {
+        background-color: #ddd;
+    }
+      
+    .btn.active {
+        background-color: #666;
+        color: white;
+    }
+
+    .directory-wrapper {
+        max-width: 900px;
+        padding: .5rem;
+        text-align: center;
+        margin: .5rem 1rem;
+    }
+
+    .directory-wrapper img {
+        padding-top: 1.5rem;
+    }
+
+    #logo7 {
+        max-height: 150px;
+    }
+
+    .column {
+        float: left;
+        width: 50%;
+        height: 275px;
+        padding: .5rem;
+    }
+      
+      /* Clear floats after the columns */
+    .directory-wrapper .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
     #main-footer-wrapper {
         max-width: 1000px;
         padding: 20px 0;
