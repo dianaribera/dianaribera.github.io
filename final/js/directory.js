@@ -19,7 +19,7 @@ fetch(requestURL)
       document.getElementById(`logo${i+1}`).setAttribute('alt', desc);
 
       document.getElementById(`contact${i+1}`).innerHTML = 'Address: ' + businesses[i].address + '<br>' + 'Phone: ' + businesses[i].phone;
-      document.getElementById(`website${i+1}`).innerHTML = '<a href="' + `${businesses[i].website}` + '" target="_blank">' + businesses[i].website; + '</a>';
+      document.getElementById(`website${i+1}`).innerHTML = '<a href="' + `${businesses[i].website}` + '" target="_blank" rel="noopener">' + businesses[i].website; + '</a>';
     } 
         // let card = document.createElement('section');
         // let img = document.createElement('img');
