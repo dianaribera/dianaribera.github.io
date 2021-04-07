@@ -25,6 +25,10 @@
         border-right: none;
     }
 
+    .events img {
+        margin-right: 10%;
+    }
+
     .contact-wrapper {
         margin: 0 50px;
         gap: 15px;

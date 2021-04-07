@@ -90,6 +90,20 @@
         padding-left: 60px;
     }
 
+    .events {
+        overflow: auto;
+    }
+
+    .events p {
+        display: inline-block;
+    }
+
+    .events img {
+        width: 40%;
+        float: right;
+        margin-right: 5%;
+    }
+
     /*------ directory -------*/
 
     #btnContainer {
@@ -171,6 +185,7 @@
 
     #main-footer {
         margin: 0 auto;
+        
     }
 
     #map {
