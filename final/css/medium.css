@@ -136,30 +136,49 @@
         padding: .5rem;
     }
       
-      /* Clear floats after the columns */
     .directory-wrapper .row:after {
         content: "";
         display: table;
         clear: both;
     }
 
-
-    #main-footer-wrapper {
-        max-width: 1000px;
-        padding: 20px 0;
+    .form-wrapper {
         margin: 0 auto;
     }
 
-    #mainfooter {
-        margin: 0 auto;
+    .thanks-wrapper {
         max-width: 600px;
-        columns: 2;
+        margin: 0 auto 10rem;
+    }
+
+    .contact-wrapper {
+        margin: 0 20px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(240px, 1fr))
+    }
+
+    .contact-form {
+        margin-left: 10px;
+        min-width: 255px;
+        grid-column: 2;
+        grid-row: 1 / 4;
+    }
+
+    .board {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #main-footer {
+        margin: 0 auto;
     }
 
     #map {
+        margin-left: 15px;
+        height: 264px;
         display: block;
-        width: 80%;
-        margin: auto;
+        grid-column: 1;
+        grid-row: 2;
       }
 
     }

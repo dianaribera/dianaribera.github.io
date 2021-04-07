@@ -305,36 +305,222 @@ a.button:hover {
 /*------- directory------- */
 .btn {
     display: none;
-  }
+}
 
-  .column {
+.column {
       width: 320px;
       background: var(--background-color);
       padding: .5rem;
       text-align: center;
       margin: .5rem auto;
       padding-bottom: 1rem;
-  }
+}
 
-  .directory-wrapper h2 {
+.directory-wrapper h2 {
       color: var(--primary-color);
       margin-top: .5rem;
       margin-bottom: .5rem;
-  }
+}
 
-  .directory-wrapper img {
+.directory-wrapper img {
       padding-top: 1.5rem;
       max-width: 75%;
-  }
+}
 
-  .directory-wrapper p a {
+.directory-wrapper p a {
       color: #777;
-  }
+}
 
-  .directory-wrapper a:hover {
+.directory-wrapper a:hover {
     color: #000;
     font-weight: 400;
     text-decoration: underline;
+}
+
+/*------------ FORM -------------*/
+.form-wrapper {
+    max-width: 38rem;
+    min-width: 300px;
+    margin: 0 10px;
+}
+
+form fieldset {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 20px auto;
+    border: 1px solid var(--primary-color);
+    background-color: #f3f5f3;
+    border-radius: 10px;
+    padding: .5rem;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-family: 'Volkhov', serif;
+    font-weight: 600;
+    background-color: var(--secondary-color);
+    color: #fff;;
+    margin: 0 1rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+
+label.above, form div {
+    display: block;
+    font-weight: 600;
+    padding-top: 1.5rem;
+    color: var(--primary-color);
+    font-size: 1.05rem;
+}
+
+.textarea {
+    display: block;
+    padding-top: 1rem;
+    color: var(--primary-color);
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.textinput {
+    float: left;
+    width: 100%;
+    min-height: 75px;
+    outline: none;
+    resize: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+form label.above input, form label.above select {
+    -webkit-appearance: none;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+}
+
+.radio {
+    display: block;
+    padding: .15rem 0;
+    color: #555;
+}
+
+form input.submitBtn {
+    border: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: .5rem;
+    padding: .75rem 1.5rem;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    max-width: 13rem;
+}
+
+form label.above input:required {
+    border-bottom: 4px solid red;
+}
+
+form label.above input:required:valid {
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+.levels-h2 {
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+    border-bottom: 4px solid var(--secondary-color);
+    width: 80%;
+}
+
+.levels {
+    margin-bottom: 3px;
+    font-size: 1.2rem;
+    color: var(--accent1-color);
+    font-family: 'Source Sans Pro', sans-serif;
+    border-bottom: 3px solid var(--accent1-color);
+    width: 60%;
+}
+
+ul {
+    margin-top: 3px;
+}
+
+.small {
+    font-size: .9rem;
+}
+
+.thanks-wrapper {
+    max-width: 500px;
+    margin: 0 1rem 10rem;
+}
+
+.thanks {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.thanks a {
+    color: var(--accent1-color);
+}
+
+.thanks a:hover {
+    text-decoration: underline;
+}
+
+/*--------contact--------*/
+.contact-wrapper {
+    margin: 0 15px;
+}
+
+.contact-info {
+    margin-bottom: 1.5rem;
+}
+
+.contact-info h2 {
+    color: var(--secondary-color);
+    font-family: 'Volkhov', serif;
+    font-size: 1.4rem;
+    margin-bottom: -5px;
+}
+
+.board {
+    margin-bottom: 1.5rem;
+}
+
+.board h2 {
+    color: var(--secondary-color);
+    font-family: 'Volkhov', serif;
+    font-size: 1.4rem;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.contact-form {
+    min-width: 260px;
+    max-width: 350px;
+}
+
+#map {
+    width: 264px;
+    border: 2px solid var(--secondary-color);
+}
+
+form input.submit-button {
+    border: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: .5rem;
+    padding: .75rem 1.5rem;
+    margin: 15px auto 10px 0;
+    max-width: 13rem;
 }
 
 
@@ -344,12 +530,9 @@ footer {
     color: #fff;
 }
 
-#main-footer-wrapper {
+#main-footer {
     padding: 20px;
-}
-
-#mainfooter {
-    max-width: 330px;
+    max-width: 320px;
 }
 
 .bold {
@@ -366,7 +549,7 @@ footer {
 .social {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 .social img{

@@ -25,7 +25,12 @@
         border-right: none;
     }
 
-    #mainfooter {
-        max-width: 750px;
+    .contact-wrapper {
+        margin: 0 50px;
+        gap: 15px;
+    }
+
+    #map {
+        margin: 10px auto 10px 15px;
     }
 }
